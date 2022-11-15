@@ -24,7 +24,8 @@
 5. Cada vez que se realice un acción (crear, completar o eliminar) se imprimirá por consola el listado
 (console.log) .
 
-
+# previa
+![img](./assets/app.png)
 
 # Desarrollo 
 La aplicacion fue desarrollada con  Angular  version 14.2.9.
