@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #fff;
+}
+
+
+.container__main{
+    background-color: #f7f1f1;
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card__todo{
+    background-color: #ff6666;
+    width: 400px;
+    height: 600px;
+    box-shadow: -20px -20px rgb(232, 226, 226);
+    display: flex;
+    flex-direction: column;
+}
+
+.divide{
+    width: 80%;
+    height: 0.5px;
+    background-color: #e8e2e2;
+    margin: 10px 0;
+    border: none;
+}
+
+.card__header{
+    width: 100%;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.card__body{
+    width: 100%;
+    margin: 0;
+}
+

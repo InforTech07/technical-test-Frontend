@@ -1,0 +1,22 @@
+<div class="container__main" role="main">
+    <div class="card__todo">
+      <div class="card__header">
+      <h1>{{dateNow.toLocaleDateString(['ban', 'id'])}}</h1>
+      <hr class="divide">
+    </div>
+      <div class="card__body">
+      <app-list-todo  [tasks]="tasks" (changeCompletedTask)="onCheckTask($event)" (removeTask)="onRemoveTask($event)" ></app-list-todo>
+      <app-form-todo (addTask)="onAddTask($event)"></app-form-todo>
+    </div>
+    </div>
+</div>
+
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+<router-outlet></router-outlet>

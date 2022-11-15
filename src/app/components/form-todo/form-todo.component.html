@@ -1,0 +1,12 @@
+<!-- </div> -->
+<div class="content__form">
+  <form>
+    <div class="form__group">
+      <label for="title" class="form__label">Nueva Tarea</label>
+      <div class="input__group">
+      <input type="text" placeholder="Agregar nueva tarea" class="form__input"  [(ngModel)]="newTask.title" name="title">
+      <button type="submit" class="form__button" (click)="createTask()">CREAR</button>
+    </div>
+  </div>
+   </form>
+</div>

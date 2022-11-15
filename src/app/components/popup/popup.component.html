@@ -1,0 +1,12 @@
+<!--confirm popup-->
+<dialog  [open]="showPopup">
+  <div class="popup">
+    <div class="popup__body">
+      <p class="popup__text">¿Quieres eliminar la tarea {{title}}?</p>
+    </div>
+    <div class="popup__footer">
+      <button class="popup__button popup__button--cancel" (click)="closePopup()">Cancel</button>
+      <button class="popup__button popup__button--confirm" (click)="confirmPopup()">Confirm</button>
+    </div>
+  </div>
+</dialog>
