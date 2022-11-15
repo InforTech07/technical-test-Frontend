@@ -1,4 +1,4 @@
-<!-- </div> -->
+<!-- list todo component -->
 <div class="content__tasks">
     <ul class="list__tasks">
         <div *ngIf="tasks.length === 0" class="list__empty">
@@ -7,6 +7,7 @@
             </svg>
             <p>No hay tareas pendientes</p>
           </div>
+          <!--Items tasks-->
         <li class="item"  *ngFor="let task of tasks">
             <div>
             <span [ngClass]="[task.completed? 'item__text item__text--done':'item__text']" >{{task.title}}</span>

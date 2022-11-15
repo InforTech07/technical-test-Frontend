@@ -1,5 +1,6 @@
+//`Task` is a model that represents a task
 export interface Task {
-    id: number;
-    title: string;
-    completed: boolean;
+    id: number; // Id task
+    title: string; // Title task
+    completed: boolean; // Completed task
 }

@@ -7,9 +7,6 @@ import { Task } from 'src/app/core/models/task.model';
   styleUrls: ['./form-todo.component.css']
 })
 
-
-
-
 export class FormTodoComponent implements OnInit {
   
   newTask: Task = {
@@ -18,14 +15,15 @@ export class FormTodoComponent implements OnInit {
     completed: false
   };
   
-  @Output() addTask = new EventEmitter<Task>();
+  @Output() addTask = new EventEmitter<Task>(); // Event for add task
   constructor() { }
 
   ngOnInit(): void {
   }
-
+  // Method for create task
   createTask() {
     this.addTask.emit(this.newTask);
+    // Reset form
     this.newTask = {
       id: 0,
       title: '',
